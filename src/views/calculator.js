@@ -116,7 +116,7 @@ export function renderCalculator(root) {
     const spreadBook = (+book.asks[0][0] - +book.bids[0][0]) / mid * 100;
     $("#calc-market", root).innerHTML = `
       <span>1 ${asset} = <b>${eur(mid)}</b> <small>(punto medio del libro de ${book.source})</small></span>
-      <span>Diferencia compra/venta: <b>${num(spreadBook, 4)} %</b></span>
+      <span>Diferencia entre la mejor oferta de compra y de venta: <b>${eur(+book.asks[0][0] - +book.bids[0][0])}</b> <small>(${spreadBook < 0.01 ? "menos del 0,01 %" : pct(spreadBook)})</small></span>
       <span>Red ${asset === "BTC" ? `Bitcoin: <b>${bf?.halfHourFee ?? "?"} sat/vB</b> → enviar ≈ ${eur(network.withdrawEur)}` : `Ethereum: <b>${gas ? num(gas.totalGwei, 3) : "?"} gwei</b> → enviar ≈ ${eur(network.withdrawEur)}`}</span>`;
 
     if (!(amount > 0)) {
