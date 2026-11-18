@@ -65,14 +65,11 @@ body {
   background: var(--paper);
   color: var(--ink);
   font: 16px/1.55 var(--sans);
-  /* renglones del libro y línea roja de margen */
-  background-image:
-    linear-gradient(to right, transparent 46px, var(--margin) 46px, var(--margin) 47px, transparent 47px),
-    repeating-linear-gradient(to bottom, transparent 0 31px, var(--rule-soft) 31px 32px);
-  background-attachment: local;
+  /* línea roja de margen, como en un libro de cuentas */
+  background-image: linear-gradient(to right, transparent 46px, var(--margin) 46px, var(--margin) 47px, transparent 47px);
 }
 @media (max-width: 700px) {
-  body { background-image: repeating-linear-gradient(to bottom, transparent 0 31px, var(--rule-soft) 31px 32px); }
+  body { background-image: none; }
 }
 
 a { color: var(--blue); }
