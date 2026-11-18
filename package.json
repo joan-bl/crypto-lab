@@ -1,0 +1,30 @@
+{
+  "name": "crypto-lab",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "test": "node --test tests/",
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "MIT",
+  "type": "module",
+  "dependencies": {
+    "@fontsource/ibm-plex-mono": "^5.3.0",
+    "@fontsource/ibm-plex-sans": "^5.3.0",
+    "@fontsource/source-serif-4": "^5.3.1",
+    "@noble/hashes": "^2.4.0",
+    "@scure/base": "^2.4.0",
+    "@scure/bip32": "^2.4.0",
+    "@scure/bip39": "^2.4.0",
+    "@scure/btc-signer": "^2.4.1",
+    "ethers": "^6.17.0",
+    "qrcode-generator": "^2.0.4"
+  },
+  "devDependencies": {
+    "vite": "^8.3.8"
+  }
+}

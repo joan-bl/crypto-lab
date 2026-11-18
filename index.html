@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Crypto Lab</title>
+  <meta name="description" content="¿A dónde va tu dinero cuando compras cripto? Calculadora de comisiones reales, explicaciones con datos en directo y una cartera de pruebas que funciona en tu navegador.">
+  <meta name="theme-color" content="#f4efe3">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%23f4efe3'/%3E%3Cpath d='M6 9h20M6 16h20M6 23h20' stroke='%23c9bfa6' stroke-width='1.5'/%3E%3Cpath d='M10 4v24' stroke='%23b0413e' stroke-width='1.5'/%3E%3Ctext x='19' y='21' font-family='monospace' font-size='13' font-weight='700' fill='%231f2a44' text-anchor='middle'%3E%E2%82%BF%3C/text%3E%3C/svg%3E">
+</head>
+<body>
+  <header class="top">
+    <a class="brand" href="#calculadora"><span class="mark">₿</span><span>Crypto&nbsp;Lab</span></a>
+    <nav>
+      <a href="#calculadora" data-tab="calculadora">Calculadora</a>
+      <a href="#como-funciona" data-tab="como-funciona">Cómo funciona</a>
+      <a href="#cartera" data-tab="cartera">Mi cartera de pruebas</a>
+      <a href="#seguir" data-tab="seguir">Sigue el dinero</a>
+    </nav>
+  </header>
+  <div class="ticker" id="ticker" aria-live="polite"></div>
+  <main id="app"></main>
+  <footer>
+    <p><b>Todo pasa en tu navegador.</b> Sin cuentas, sin servidor propio, sin publicidad ni enlaces de afiliado. Los datos vienen de APIs públicas (CoinGecko, Binance, mempool.space, PublicNode, Blockscout).</p>
+    <p>Esto no es asesoramiento financiero. Las comisiones son aproximadas: compruébalas en la web oficial de cada plataforma. · <a href="https://github.com/joan-bl/crypto-lab" target="_blank" rel="noopener">Código abierto</a></p>
+  </footer>
+  <script type="module" src="/src/main.js"></script>
+</body>
+</html>
